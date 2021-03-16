@@ -10,528 +10,239 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-The HTML "pre""/pre" <pre> element</pre> defines preformatted text.<br>
-
-    The text inside a <pre>"pre"</pre> element is displayed in a fixed-width font
-    (usually Courier), and it
-        preserves both spaces and line breaks:<br>
-<br>
-        <pre>
-  My Bonnie lies over the ocean.
-
-  My Bonnie lies over the sea.
-
-  My Bonnie lies over the ocean.
-
-  Oh, bring back my Bonnie to me.
-</pre><br>
-        The HTML "em""/em" <em> element defines emphasized text. The content inside is typically
-            displayed in italic.</em>><br>
-
-        Tip: A screen reader will pronounce the words in <em> with an emphasis</em>>,
-        using verbal stress.<br>
-
-    The HTML "ins""/ins" <ins> element</ins> defines a text that has been inserted into a
-    document. Browsers
-        will usually underline inserted text:<br>
-<p>My favorite color is "del""/del"  <del>blue</del> "ins""/ins" <ins>red</ins>.</p><br>
-<br>
-    The HTML  <sub>"sub""/sub"</sub> element defines subscript text. Subscript text appears half
-    character below the normal line, and is sometimes rendered in a smaller font.
-    Subscript
-    text can be used for chemical formulas, like H<sub>2</sub>O:<br>
-    <p>This is <sub>subscripted</sub> text. H<sub>2</sub>O</p><br>
-
-
-    The HTML  <sup>"sup""/sup"</sup> element defines superscript text. Superscript text
-    appears half a
-        character above the normal line, and is sometimes rendered in a smaller font.
-    Superscript text can be used for footnotes, like WWW<sup>[1]</sup>:<br>
-
-        <p>This is <sup>superscripted</sup> text.</p><br>
-
-
-        The HTML <cite>"cite""/cite"</cite> tag defines an abbreviation
-or an acronym, like "HTML",
-    "CSS", "Mr.", "Dr.", "ASAP", "ATM".<br>
-
-Marking abbreviations can give useful information to browsers, translation systems and
-    search-engines.<br>
-
-        /*<p>The "abbr""/abbr"<abbr title="World Health Organization">WHO</abbr>
-    was founded in 1948.
-    </p>*/<br>
-
-        The WHO was founded in 1948.<br>
-
-<p>Marking up abbreviations can give useful information to browsers, translation
-    systems and search-engines.</p><br>
---
-/**/
---
-<br>
-The HTML <q>"q""/q" tag</q> defines a short quotation.<br>
-
-Browsers normally insert quotation marks around the quotation.<br>
-
-<p>Browsers usually insert quotation marks around the q element.</p><br>
-
-<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-<br>
-Browsers usually insert quotation marks around the q element.<br>
-
-WWF's goal is to: Build a future where people live in harmony with nature."<br>
---
-/**/
---
-<br>
-The  <address>"address""/address" HTML</address> tag "address" defines the
-contact information
-        for the author/owner of a document or an article.<br>
-
-The contact information can be an email address, URL, physical address, phone number,
-        social media handle, etc.<br>
-
-The text in the <address>element</address> usually renders in italic, and browsers
-        will always add a line break before and after the <address> element.</address><br>
-
-<p>The HTML address element defines contact information (author/owner) of a
-    document or article.</p><br>
-<br>
-<address><br>
-Written by John Doe.<br>
-Visit us at:<br>
-Example.com<br>
-Box 564, Disneyland<br>
-USA
-</address><br>
---
-/**/
---
-<br>
-The HTML <cite>"cite""/cite"</cite> tag defines the title of a creative work
-        (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
-<br>
-Note: A person's name is not the title of a work.<br>
-<br>
-The text in the <abbr>"abbr""/abbr"</abbr> element usually renders in italic.<br>
-<br>
-<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p><br>
-
-<p>The HTML cite element defines the title of a work.</p><br>
-<p>Browsers usually display cite elements in italic.</p><br>
-
-<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream"><br>
-<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p><br>
---
-<abbr>"abbr""/abbr"</abbr>	Defines an abbreviation or acronym<br>
-<address>"address""/address"</address>	Defines contact information
-for the author/owner of a document<br>
-<bdo>"bdo""/bdo"</bdo>	Defines the text direction<br>
-<blockquote>"blockquote""/blockquote"</blockquote>	Defines a section
-that is quoted from another source<br>
-<cite>"cite""/cite"</cite>	Defines the title of a work<br>
-<q>"q""/q"</q>	Defines a short inline quotation<br>
---
-/**/
---
-<br>
-In HTML, a color can be specified using hue, saturation, and lightness
-        (HSL) in the form:<br>
-
-hsl(hue, saturation, lightness)<br>
-
-Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green,
-        and 240 is blue.<br>
-
-Saturation is a percentage value, 0% means a shade of gray, and 100% is
-        the full color.<br>
-
-Lightness is also a percentage value, 0% is black, and 100% is white.<br>
-
-HSLA color values are an extension of HSL color values with an Alpha channel -
-        which specifies the opacity for a color.<br>
-
-An HSLA color value is specified with:<br>
-
-hsla(hue, saturation, lightness, alpha)<br>
-
-The alpha parameter is a number between 0.0 (fully transparent)<br>
-        and 1.0 (not transparent at all):<br>
---
-/**/
---
-<br>
-By default, the linked page will be displayed in the current browser window.
-        To change this, you must specify another target for the link.<br>
-<br>
-The target attribute specifies where to open the linked document.<br>
-<br>
-The target attribute can have one of the following values:<br>
-<br>
-_self - Default. Opens the document in the same window/tab as it was clicked<br>
-_blank - Opens the document in a new window or tab<br>
-_parent - Opens the document in the parent frame<br>
-_top - Opens the document in the full body of the window<br>
-<br>
---
-/**/
---
-<br>
-Button as a Link<br>
-To use an HTML button as a link, you have to add some JavaScript code.<br>
-
-JavaScript allows you to specify what happens at certain events,
-            such as a click of a button:<br>
-"button onclick="document.location='default.asp'"" HTML Tutorial "/button"<br>
-<button onclick="document.location='default.asp'">HTML Tutorial</button><br>
-<br>
---
-/**/
---
-<br>
-Then, add a <map>"map""/map"</map> element.<br>
-
-The <map>"map""/map"</map> element is used to create an image map, and is linked to
-the image by
-            using the required name attribute:<br>
-
-            <map name="workmap">"map name="workmap"""/map"</map><br>
-
-The name attribute must have the same value as the "img"<img>'s usemap attribute .<br>
-
-The Areas<br>
-Then, add the clickable areas.<br>
-
-A clickable area is defined using an "area"<area> element.<br>
-
-Shape<br>
-You must define the shape of the clickable area, and you can choose one of
-these values:<br>
-<br>
-rect - defines a rectangular region<br>
-circle - defines a circular region<br>
-poly - defines a polygonal region<br>
-default - defines the entire region<br>
-
-<area shape="circle" coords="337, 300, 44" href="coffee.htm"><br>
-"area shape="circle" coords="337, 300, 44" href="coffee.htm""<br>
---
-/**/
---
-<br>
-The HTML <picture>"picture""/picture"</picture> element gives web
-developers more flexibility in specifying image resources.
-<br>
-The <picture>"picture""/picture"</picture> element contains one or more
-<source>"source""/source"</source> elements,
-        each referring to different images through the srcset attribute.
-        This way the browser can choose the image that best fits the current view
-        and/or device.<br>
-
-Each "source""/source" element has a media attribute that defines<br>
-when the image<br>
-        is the most suitable.<br>
-<br>
-<picture>
-  <source media="(min-width: 650px)" srcset="img_food.jpg">
-  <source media="(min-width: 465px)" srcset="img_car.jpg">
-  <img src="img_girl.jpg">
-</picture>
-<br>
-"picture"<br>
-"source media="(min-width: 650px)" srcset="img_food.jpg""<br>
-"source media="(min-width: 465px)" srcset="img_car.jpg""<br>
-"img src="img_girl.jpg""<br>
-"/picture"<br>
---
-/**/
---
-<br>
-The <table>"table""/table"</table> tag defines an HTML table.<br>
-
-Each table row is defined with a <tr>"tr"</tr> tag. Each table header is defined with
-            a <th>"th"</th> tag. Each table data/cell is defined with a
-<td>"td"</td> tag.<br>
-
-By default, the text in <th>"th"</th> elements are bold and centered.<br>
-
-By default, the text in <td>"td"</td> elements are regular and left-aligned.<br>
-
-To make a cell span more than one column, use the colspan attribute:<br>
-
-To make a cell span more than one row, use the rowspan attribute:<br>
-<h2>Basic HTML Table</h2>
-        "table style="width:100%"<br>
-            "tr"<br>
-                "th"<br>
-                    Firstname<br>
-                "/th"<br>
-                "th colspan="2""<br>
-                    Lastname<br>
-                "/th"<br>
-                "th colspan="2""<br>
-                    Age<br>
-                "/th"<br>
-            "/tr"<br>
-<br>
-            "tr"<br>
-                "th"<br>
-                    Eve<br>
-                "/th"<br>
-                "th"<br>
-                    Jackson<br>
-                "/th"<br>
-                "th"<br>
-                    94<br>
-                "/th"<br>
-                "th"<br>
-                    150<br>
-                "/th"<br>
-            "/tr"<br>
-<br>
-            "tr"<br>
-                "th"<br>
-                    Jill<br>
-                "/th"<br>
-                "th"<br>
-                    Smith<br>
-                "/th"<br>
-                "th"<br>
-                    50<br>
-                "/th"<br>
-                "th"<br>
-                    150<br>
-                "/th"<br>
-            "/tr"<br>
-
-            "tr"<br>
-                "th"<br>
-                    John<br>
-                "/th"<br>
-                "th"<br>
-                    Doe<br>
-                "/th"<br>
-                "th"<br>
-                    80<br>
-                "/th"<br>
-                "th"<br>
-                    150<br>
-                "/th"<br>
-            "/tr"<br>
-<br>
-            "tr"<br>
-                "th"<br>
-                    John<br>
-                "/th"<br>
-                "th"<br>
-                    Doe<br>
-                "/th"<br>
-                "th"<br>
-                    80<br>
-                "/th"<br>
-                "th"<br>
-                    150<br>
-                "/th"<br>
-            "/tr"<br>
-        "/table"<br>
-<br>
-The default border property:
-<div class="bordered">
-<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th rowspan="2">Lastname</th>
-    <th colspan="2">Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-    <td>150</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-    <td>150</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-    <td>150</td>
-  </tr>
-    <tr>
-    <td>John</td>
-    <td >Doe</td>
-    <td>80</td>
-    <td>150</td>
-  </tr>
-</table>
-</div>
-Note: If the table has collapsed borders, border-spacing has no effect.<br>
-To add a caption to a table, use the <caption>"caption"</caption> tag:<br>
-
-            "table style="width:100%""<br>
-                "caption"<br>
-                    Monthly savings<br>
-                "/caption"<br>
-            "tr"<br>
-                "th"<br>
-                    Month<br>
-                "/th"<br>
-                "th"<br>
-                    Savings<br>
-                "/th"<br>
-            "/tr"<br>
-            "tr"<br>
-                "td"<br>
-                    January<br>
-                "/td"<br>
-                "td"<br>
-                    $100<br>
-                "/td"<br>
-            "/tr"<br>
-            "tr"<br>
-                "td"<br>
-                    February<br>
-                "/td"<br>
-                "td"<br>
-                    $50<br>
-                "/td"<br>
-            "/tr"<br>
-            "/table"<br>
-<br>
-Cell padding specifies the space between the cell content and its borders.<br>
-
-If you do not specify a padding, the table cells will be displayed without padding.<br>
-
-To set the padding, use the CSS padding property:<br>
-
-<div class="collapsed">
-    The border-collapse property:
-<table style="width:100%">
-  <caption>Monthly savings</caption>
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <td>January</td>
-    <td>$100</td>
-  </tr>
-  <tr>
-    <td>February</td>
-    <td>$50</td>
-  </tr>
-</table>
-</div>
-<br>
---
-/**/
---
-<br>
-HTML also supports description lists.<br>
-
-A description list is a list of terms, with a description of each term.<br>
-
-The <dl>"dl""/dl"</dl> tag defines the description list, the <dt>"dt""/dt"</dt>
-            tag defines the term (name),
-                        and the <dd>"dd""/dd"</dd> tag describes each term:<br>
-
-            "dl"<br>
-            "dt"Coffee"/dt"<br>
-            "dd"- black hot drink"/dd"<br>
-            "dt"Milk"/dt"<br>
-            "dd"- white cold drink"/dd"<br>
-            "/dl"<br>
-
-<dl>
-  <dt>Coffee</dt>
-  <dd>- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
-</dl>
-<br>
---
-/**/
---
-<br>
-A block-level element always starts on a new line.<br>
-
-A block-level element always takes up the full width available
-                    (stretches out to the left and right as far as it can).<br>
-
-A block level element has a top and a bottom margin, whereas an inline element does not.
-<br>
-The <div>"div""/div"</div> element is a block-level element.<br>
-<br>
-Here are the block-level elements in HTML:<br>
-            "address""article""aside""blockquote""canvas""dd""div""dl""dt"<br>
-            "fieldset""figcaption""figure"<br>
-            "footer""form""h1""h6""header""hr""li""main""nav""noscript""ol""p"<br>
-            "pre""section""table"<br>
-            "tfoot""ul""video"<br>
-<!--
-<address><article><aside><blockquote><canvas><dd><div><dl><dt>
-<fieldset><figcaption><figure>
-<footer><form><h1><h6><header><hr><li><main><nav><noscript><ol><p>
-<pre><section><table>
-<tfoot><ul><video>
--->
-An inline element does not start on a new line.<br>
-
-An inline element only takes up as much width as necessary.<br>
-
-    This is a <span>"span""/span"</span> element inside a paragraph.<br>
-
-Here are the inline elements in HTML:<br>
-            "a""abbr""acronym""b""bdo""big""br""button""cite""code"<br>
-            "dfn""em""i"<br>
-            "img""input""kbd""label""map""object""output""q""samp""script""select"<br>
-            "small""span""strong""sub""sup""textarea""time""tt""var"<br>
-<!--
-<a><abbr><acronym><b><bdo><big><br><button><cite><code>
-<dfn><em><i><img><input><kbd><label><map><object><output><q>
-<samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
--->
---
-/**/
---
-<br>
-The class attribute can be used on any HTML element.
-
-Note: The class name is case sensitive!
-<br>
---
-/**/
---
-<br>
-noscript(use for alternative message if script would not work)<br>
-
---
-/**/
---
-<br>
-The <base>"base""/base"</base> element specifies the base URL and/or target for
-                    all relative URLs in a page.<br>
-
-The "base""/base" tag must have either an href or a target
-attribute present, or both.<br>
-
-There can only be one single "base""/base" element in a document!<br>
-
-
-
---
-/**/
---
-<br>
-The HTML <kbd>"kbd""/kbd"</kbd> element is used to define keyboard input.<br>
-The content inside is displayed in the browser's default monospace font.<br>
-<br>
-
-
+    <div class="container">
+    <!-- **Header section** -->
+        <header>
+            <div class="logo">
+
+                <img src="img/logo.png" alt="our website logotype" title="our super-cool logotype">
+
+            </div>
+
+            <div class="second_header_block">
+
+            </div>
+
+            <div class="header_contacts">
+                <ul>
+                    <li>
+                        +7 (499) 346-21-31
+                    </li>
+
+                    <li>
+                        <ins>
+                            manager@pixelplus.ru
+                        </ins>
+                    </li>
+
+                    <li>
+                        <ins>
+                            www.pixelplus.ru
+                        </ins>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    <!-- **end of header section** -->
+
+    <!-- **Main section** -->
+        <section id="main_content">
+            <!-- **Sidebar section** -->
+            <section id="left">
+
+                <div class="short_info">
+                    <ul>
+                        <li class="aside_list_headline">
+                            Создание сайтов
+                        </li>
+                        <li>
+                            Изготовление сайтов <br>«под ключ»
+                        </li>
+                        <li>
+                            Как мы работаем
+                        </li>
+
+                        </li>
+                        <li>
+                            Интеграция с 1С
+                        </li>
+                        <li>
+                            Поддержка сайтов
+                        </li>
+                        <li>
+                            Создание сайтов на <br> Битрикс
+                        </li>
+                        <li>
+                            Модули Битрикс
+                        </li>
+                        <li>
+                            Купить Битрикс
+                        </li>
+                        <li>
+                            Дизайн сайтов
+                        </li>
+                        <li>
+                            Редизайн сайтов
+                        </li>
+                        <li>
+                            Интернет-магазины
+                        </li>
+                        <li>
+                            Создание логотипов
+                        </li>
+                    </ul>
+                </div>
+
+
+                    <img class="aside_img" src="img/aside_img.png" tittle="look at our new godlike banner"
+                         alt="this is our sidebar image that stick to the bottom">
+
+
+            </section>
+            <!-- **sidebar end** -->
+
+            <!-- **Content section** -->
+            <section id="center">
+                <div class="main_top_content_block">
+                    <h2>
+                        <span>PSD файл с макетом. Макет разбит по слоям и сгрупированн по папкам:</span>
+                    </h2>
+                    <ul>
+                        <li>
+                            <span>number</span> - нумерация блоков (номера блоков верстать не нужно)
+                        </li>
+                        <li>
+                            <span>text</span> - текстовые блоки (шрифт Arial, размер 14 пикселей,
+                            межстрочное растояние 22 пикселя)
+                        </li>
+                        <li>
+                            <span>head</span> - шапка сайта
+                        </li>
+                        <li>
+                             <span>content</span> - контентная область, которая в свою очередь
+                            делится на <span>left</span>  и <span>center</span>
+                        </li>
+                    </ul>
+                    <p>Текстовое описание задания и требования.</p>
+                </div>
+                <div class="content_imges">
+                    <img src="img/content_img.png" class="img_catalog" alt="our first content image"
+                         title="our image №1">
+                    <img src="img/content_img.png" class="img_catalog" alt="our second content image"
+                         title="our image №2">
+                    <img src="img/content_img.png" class="img_catalog" alt="our third content image"
+                         title="our image №3">
+                    <img src="img/content_img.png" class="img_catalog" alt="our fourth content image"
+                         title="our image №4">
+                    <img src="img/content_img.png" class="img_catalog" alt="our fifth content image"
+                         title="our image №5">
+                    <br>
+                    <img src="img/content_img.png" class="img_catalog" alt="our sixth content image"
+                         title="our image №6">
+                    <img src="img/content_img.png" class="img_catalog" alt="our seventh content image"
+                         title="our image №7">
+                </div>
+                <div class="center_info">
+                    <p>
+                        Студия «Пиксель Плюс» разработает полнофунк-циональный продукт ориентированный на
+                        целе-вую аудиторию и эффективно решающий постав-ленные перед ним маркетинговые задачи.
+                        Опыт работ и использование собственных технологий, позволяет предлагать услугу
+                        изготовления сайта в Москве в разумные сроки.
+                    </p>
+
+                    <p class="info_left">
+                        Поисковое продвижение (раскрутка) ведется по коммерческим запросам, что позволяет много-кратно
+                        увеличить количество продаж с сайта при разумном рекламном бюджете.
+                    </p>
+                </div>
+            </section>
+            <!-- **content end** -->
+        </section>
+    <!-- **end of main section** -->
+
+    <!-- **Footer section** -->
+        <footer>
+            <div class="bottom_left">
+                <ul>
+                    <li>
+                        <p>Пункт 01</p>
+                    </li>
+                    <li>
+                        <p>Пункт 02</p>
+                    </li>
+                    <li>
+                        <p>Пункт 03</p>
+                    </li>
+                    <li>
+                        <p>Пункт 04</p>
+                    </li>
+                    <li>
+                        <p>Пункт 05</p>
+                    </li>
+                    <li>
+                        <p>Пункт 06</p>
+                    </li>
+                    <li>
+                        <p>Пункт 07</p>
+                    </li>
+                    <li>
+                        <p>Пункт 08</p>
+                    </li>
+                    <li>
+                        <p>Пункт 09</p>
+                    </li>
+                    <li>
+                        <p>Пункт 10</p>
+                    </li>
+                    <li>
+                        <p>Пункт 11</p>
+                    </li>
+                    <li>
+                        <p>Пункт 12</p>
+                    </li>
+                    <li>
+                        <p>Пункт 13</p>
+                    </li>
+                    <li>
+                        <p>Пункт 14</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom_center">
+                <ul>
+                    <li>
+                        <p>Поисковое продвижение сайтов</p>
+                    </li>
+                    <li>
+                        <p>Тариф «Старт»</p>
+                    </li>
+                    <li>
+                        <p>Тариф «Продвижение Плюс»</p>
+                    </li>
+                    <li>
+                        <p>Тариф «Интернет-магазин»</p>
+                    </li>
+                    <li>
+                        <p>Тариф «Эксклюзив»</p>
+                    </li>
+                    <li>
+                        <p>Тариф «Контекст + SEO»</p>
+                    </li>
+                    <li>
+                        <p>Тариф «Регион»</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom_right">
+                <div class="right_corner_block">
+                    
+                </div>
+                <img src="img/bottom_right_img.png" title="our bottom nice image" alt="bottom right image">
+            </div>
+        </footer>
+    <!-- **end of footer section** -->
+    </div>
 </body>
 </html>

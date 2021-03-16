@@ -1,0 +1,35 @@
+header {
+  width: 100%;
+  display: block;
+  padding: 0px 0px 13px 0px;
+  border-bottom: 1px solid #696969;
+  .logo {
+    width: auto;
+    height: auto;
+    display: inline-block;
+  }
+  .logo img{
+    width: 122px;
+    height: 108px;
+  }
+  .second_header_block {
+    display: inline-block;
+    width: 279px;
+    height: 108px;
+    background: #777;
+    margin: 0px 0px 0px 20px;
+  }
+  .header_contacts {
+    display: inline-block;
+    width: 513px;
+    height: 108px;
+    background: #777;
+    color: #fff;
+    float: right;
+  }
+  .header_contacts ul{
+    list-style-type: none;
+    text-align: right;
+    margin: 20px 23px;
+  }
+}

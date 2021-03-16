@@ -1,16 +1,107 @@
-.bordered table, .bordered th, .bordered td {
-  border: 1px solid black;
-}
-.bordered table {
-  border-spacing: 10px;
-}
-.collapsed table, .collapsed th, .collapsed td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-.collapsed th, .collapsed td {
-  padding: 15px;
-}
-.collapsed td {
-  text-align: right;
+#main_content {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 21px 0px 0px 0px;
+  #left {
+    height: 773px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    .short_info {
+      width: 160px;
+      background: #777;
+      color: #fff;
+      list-style-type: none;
+      padding: 2px 13px;
+      ul{
+        list-style-type: none;
+        text-align: left;
+        padding: 0px;
+        .aside_list_headline {
+          font-weight: bold;
+          color: #fff;
+        }
+      }
+    }
+    .aside_img {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding: 0px;
+      margin: 0px;
+      height: 133px;
+      width: 184px;
+    }
+  }
+  #center {
+    height: auto;
+    display: inline-block;
+    padding-left: 20px;
+    .main_top_content_block {
+      background: #dcdcdc;
+      color: #777;
+      height: auto;
+      float: left;
+      width: 720px;
+      padding: 17px 17px 15px 17px;
+      margin-bottom: 5px;
+      ul{
+        margin: 0px;
+        list-style-type: square;
+      }
+      h2 {
+        margin: 0px;
+        margin-bottom: 22px;
+      }
+      p {
+        margin: 0px;
+        margin-top: 23px;
+      }
+      span {
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+    .content_imges {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      img{
+
+        padding-top: 15px;
+      }
+      .img_catalog {
+        padding-left: 17px;
+      }
+      img:nth-child(6n+1) {
+        padding-left: 0px;
+      }
+
+    }
+
+    .center_info{
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #cdcdcd;
+      color: #777777;
+      padding: 0px;
+      margin: 0px;
+      p {
+        text-align: justify;
+        float: left;
+        width: 330px;
+        height: auto;
+        background: #cdcdcd;
+        padding: 25px 18px;
+        margin: 0px;
+      }
+      .info_left {
+        height: 100%;
+        margin-left: 20px;
+        height: 151px;
+      }
+    }
+  }
 }
