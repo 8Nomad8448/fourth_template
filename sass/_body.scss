@@ -1,5 +1,5 @@
 body {
-  font-family: "Arial";
+  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -7,9 +7,13 @@ body {
   letter-spacing: normal;
   margin: 0px;
   background: transparent;
+  display:flex;
+  flex-direction:column;
+  min-height: 100vh;
 }
 .container {
-  width: 960px;
-  padding: 24px 10px 25px 10px;
+  width: 980px;
+  height: auto;
+  padding: 0px 10px 0px 10px;
   margin: 0 auto;
 }
