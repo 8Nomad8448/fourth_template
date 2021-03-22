@@ -2,10 +2,10 @@ header {
   width: 100%;
   background: #dcdcdc;
   height: auto;
-  padding: 66px 0px 57px 0px;
+  padding: 0px 0px 57px 0px;
   overflow: hidden;
-  flex: 0 0 auto;
   .left_block {
+    margin-top: 66px;
     display: block;
     width: auto;
     height: auto;
@@ -17,11 +17,12 @@ header {
     height: 100px;
   }
   .right_block {
+    margin-top: 34px;
     display: block;
     float: right;
     width: auto;
     height: auto;
-    padding: 2px 5px 12px 5px;
+    padding: 2px 0px 12px 0px;
   }
   .right_block p{
     font-family: 'Open Sans Condensed', sans-serif;
@@ -33,6 +34,31 @@ header {
     letter-spacing: 1px;
     font-weight: 400;
     text-align: right;
+  }
+  .right_block {
+    .feedback {
+      width: fit-content;
+      margin-top: 5px;
+      font-family: 'PT Sans', sans-serif;
+      color: #767676;
+      font-size: 24px;
+      line-height: 24px;
+      text-align: right;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 0.6px;
+      border-bottom: 2px dashed #767676;
+      float: right;
+      text-decoration: none;
+    }
+    .feedback:hover {
+      color: #767676;
+      text-decoration: none;
+    }
+    .feedback:active {
+      color: #767676;
+      text-decoration: none;
+    }
   }
 }
 menu  {
@@ -46,6 +72,7 @@ menu  {
     margin: 0 auto;
     width: 100%;
     ul {
+      flex-wrap: wrap;
       list-style-type: none;
       display: flex;
       justify-content: center;

@@ -7,22 +7,40 @@
            initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Training project</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts
+    ================================================== -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fontstyle.css">
+
+    <!-- Owl-carousel
+    ================================================== -->
+    <link rel="stylesheet" href="libs/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/assets/owl.theme.default.min.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- CSS
+        ================================================== -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- **Header section** -->
     <header>
         <div class="container">
             <div class="left_block">
-                <img src="img/logo_image.png" title="our company's logotype"
+                <img src="img/logo_image.png" style="width: 273px;
+    height: 100px;"
+                     title="our company's logotype"
                      alt="our logotype image that looks like grey square">
             </div>
             <div class="right_block">
-                <p>+7(499)777-77-77</p>
-                <p>+7(499)777-77-77</p>
+                <p>+7(499) 777-77-77</p>
+                <p>+7(499) 777-77-77</p>
+                <a id="toggleModal" href="#" class="feedback">Обратная связь</a>
             </div>
         </div>
     </header>
@@ -56,95 +74,235 @@
 
     <!-- **Slider section** -->
     <section id="slider">
-        <img src="img/slider.png"
-             title="our beautifull slider image" alt="just a bunch of colored circles">
+        <div id="owl-slider" class="owl-carousel owl-theme animate__animated">
+
+            <div class="item">
+                <img src="img/slider.png" style="width: 1248px;
+    height: 462px;"
+                       title="our beautifull slider image first"
+                     alt="just a bunch of colored circles with numver one">
+            </div>
+
+            <div class="item ">
+                <img src="img/slider_2.png" style="width: 1248px;
+    height: 462px;"
+                     title="our beautifull slider image second"
+                     alt="just a bunch of colored circles with number two">
+            </div>
+        </div>
+
     </section>
     <!-- **end of slider section** -->
 
     <!-- **Main section** -->
         <section id="content">
             <div class="container">
-                <div class="left_content_block">
-                    <h2>
-                        Новости
-                    </h2>
+                <div class="breadcrumbs">
                     <ul>
-                        <li class="news_hedlines">
-                            14 сентября 2013 г.
+                        <li>
+                            <a href="#">
+                                Главная
+                            </a>
                         </li>
-                        <li class="news_items">
-                            Редизайн веб-сайта архитектурного <br> бюро.
+                        <li>
+                            <span>
+                                /
+                            </span>
                         </li>
-
-                        <li class="news_hedlines">
-                            14 сентября 2013 г.
+                        <li>
+                            <a href="#">
+                                Каталог
+                            </a>
                         </li>
-                        <li class="news_items">
-                            Раскрутка интернет-магазина декора- <br> тивных стикеров и
-                            виниловых наклеек.
+                        <li>
+                            <span>
+                                /
+                            </span>
                         </li>
-
-                        <li class="news_hedlines">
-                            14 сентября 2013 г.
-                        </li>
-                        <li class="news_items">
-                            SEO-продвижение сайта поставщика <br> дизель генераторов.
-                        </li>
-
-                        <li class="news_hedlines">
-                            14 сентября 2013 г.
-                        </li>
-                        <li class="news_items">
-                            Поисковое продвижение веб-сайта <br> поставщика гидрооборудования.
+                        <li>
+                            <a href="#">
+                                Бытовая техника
+                            </a>
                         </li>
                     </ul>
-                    <p>Архив новостей</p>
                 </div>
-                <div class="right_content_block">
+            <div class="leftblock">
+                <div class="droplists">
+                    <ul class="tabs">
+                        <li class="items">
+                            <h4>Автомобили</h4>
+                            <ul>
+                                <li>Микроволновки</li>
+                                <li>Холодильники</li>
+                                <li>Посудомоечные машины</li>
+                                <li>Чайники</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="tabs">
+                        <li class="items"><h4>Бытовая техника</h4>
+                            <ul>
+                                <li>Микроволновки</li>
+                                <li>Холодильники</li>
+                                <li>Посудомоечные машины</li>
+                                <li>Чайники</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="tabs">
+                        <li class="items"><h4>Мобильная техника</h4>
+                            <ul>
+                                <li>Микроволновки</li>
+                                <li>Холодильники</li>
+                                <li>Посудомоечные машины</li>
+                                <li>Чайники</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="tabs">
+                        <li class="items"><h4>Компьютеры</h4>
+                            <ul>
+                                <li>Микроволновки</li>
+                                <li>Холодильники</li>
+                                <li>Посудомоечные машины</li>
+                                <li>Чайники</li>
+                            </ul>
+                        </li>
 
-                    <h2>
-                        Компания «Пиксель Плюс»
-                    </h2>
+                    </ul>
+                    <ul class="tabs">
+                        <li class="items"><h4>Одежда</h4>
+                            <ul>
+                                <li>Микроволновки</li>
+                                <li>Холодильники</li>
+                                <li>Посудомоечные машины</li>
+                                <li>Чайники</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="tabs">
+                        <li class="items"><h4>Недвижимость</h4>
+                            <ul>
+                                <li>Микроволновки</li>
+                                <li>Холодильники</li>
+                                <li>Посудомоечные машины</li>
+                                <li>Чайники</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="aside_logo">
+                    <img src="img/some_logo.png" style="width: 97px; height: 111px;"
+                         title="Our price list image"
+                         alt="this is our price list image">
+                    <h3>
+                        Прайс-лист
+                    </h3>
+                </div>
+            </div>
+            <div class="centerblock">
+                <div class="display_items">
+                    <div class="merch">
+                        <img src="img/goods.png" style="width: 210px; height: 209px"
+                             title="An image of our super merch"
+                             alt="An image of kettle">
+                        <p>Самый клевый чайник, который надо купить!</p>
+                        <span class="price">
+                            1 900 р.
+                        </span>
+                        <span><a href="#">
+                            <img src="img/addtobasket_mini.png" style="width: 28px; height: 21px"
+                                 title="Image of a shopping basket"
+                                 alt="virtual basket image"></a>
+                        </span>
+                    </div>
+                    <div class="merch">
+                        <img src="img/goods.png" style="width: 210px; height: 209px"
+                             title="An image of our super merch"
+                             alt="An image of kettle">
+                        <p>Самый клевый чайник, который надо купить!</p>
+                        <span class="price">
+                            1 900 р.
+                        </span>
+                        <span><a href="#">
+                            <img src="img/addtobasket_mini.png" style="width: 28px; height: 21px"
+                                 title="Image of a shopping basket"
+                                 alt="virtual basket image"></a>
+                        </span>
+                    </div>
+                    <div class="merch">
+                        <img src="img/goods.png" style="width: 210px; height: 209px"
+                             title="An image of our super merch"
+                             alt="An image of kettle">
+                        <p>Самый клевый чайник, который надо купить!</p>
+                        <span class="price">
+                            1 900 р.
+                        </span>
+                        <span><a href="#">
+                            <img src="img/addtobasket_mini.png" style="width: 28px; height: 21px"
+                                 title="Image of a shopping basket"
+                                 alt="virtual basket image"></a>
+                        </span>
+                    </div>
+                    <div class="merch">
+                        <img src="img/goods.png" style="width: 210px; height: 209px"
+                             title="An image of our super merch"
+                             alt="An image of kettle">
+                        <p>Самый клевый чайник, который надо купить!</p>
+                        <span class="price">
+                            1 900 р.
+                        </span>
+                        <span><a href="#">
+                            <img src="img/addtobasket_mini.png" style="width: 28px; height: 21px"
+                                 title="Image of a shopping basket"
+                                 alt="virtual basket image"></a>
+                        </span>
+                    </div>
+                    <div class="merch">
+                        <img src="img/goods.png" style="width: 210px; height: 209px"
+                             title="An image of our super merch"
+                             alt="An image of kettle">
+                        <p>Самый клевый чайник, который надо купить!</p>
+                        <span class="price">
+                            1 900 р.
+                        </span>
+                        <span><a href="#">
+                            <img src="img/addtobasket_mini.png" style="width: 28px; height: 21px"
+                                 title="Image of a shopping basket"
+                                 alt="virtual basket image"></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="pages_number">
                     <ul>
-                            <li>
-                                <p>
-                                    Компания «Пиксель Плюс» существует более 6 лет, за это время
-                                    мы принимали участие в разработке более чем 700 сайтов, поэтому
-                                    можем уверенно называть себя професси-оналами. На данный момент
-                                    наш коллектив состоит из более чем 30 сотрудников рабо-тающих в
-                                    двух офисах в Москве и Зеленограде.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p>
-                                    Одним из основных направлений работ нашей компании является
-                                    поисковое продви-жение сайтов, на данной момент мы работаем с
-                                    более чем 150 постоянными клиентами по более чем 11 000
-                                    поисковым запросам. При этом в работе основной акцент мы
-                                    делаем на качестве работ, а так же применяем собственные
-                                    уникальные разработки в области SEO продвижения. На данный
-                                    момент отдел SEO состоит из 9 человек под руководством
-                                    ведущего специалиста, преимущественно работающих в нашем
-                                    московском офисе.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p>
-                                    Наша компания является золотым сертифицированным партнёром
-                                    «1С-Битрикс» (сер-тификат № 33939 с 2007 по 2013), что ещё
-                                    раз подтверждает квалификацию наших сотрудников. В январе
-                                    2013 мы стали лидерами продаж продуктов «1С-Битрикс» и
-                                    вошли в число лучших разработчиков сайтов России.
-                                    Все специалисты занимающиеся изготов-лением сайтов проходят
-                                    обязательную сертификацию «1С-Битрикс» в течении первых 6
-                                    месяцев работы в компании, после чего продолжают непрерывно
-                                    поддерживать и развивать свои профессиональные навыки.
-                                </p>
-                            </li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
                     </ul>
                 </div>
+                <div class="content_text">
+                    <p>
+                        Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке
+                        более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент
+                        наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и
+                        Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости,
+                        угасания души.
+                    </p>
+                    <p>
+                        Одним из основных направлений работ нашей компании является поисковое продвижение сайтов,
+                        на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000
+                        поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же
+                        применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел
+                        SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в
+                        нашем московском офисе.
+                    </p>
+                </div>
+            </div>
             </div>
         </section>
     <!-- **end of main section** -->
@@ -194,7 +352,9 @@
 
                 <div class="footer_right">
 
-                        <img src="img/company.png" title="The image of our company logotype"
+                        <img src="img/company.png" style="width: 36px;
+    height: 38px;"
+                             title="The image of our company logotype"
                              alt="this is our footer image">
 
                     <div class="footer_image_text">
@@ -206,5 +366,37 @@
             </div>
         </footer>
     <!-- **end of footer section** -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal fade-in">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>ОБРАТНАЯ СВЯЗЬ</h3>
+            <form action="#">
+                <label for="name">Ваше имя*</label>
+                <input class="name" type="text" id="name" name="name">
+
+                <label for="phone">Телефон*</label>
+                <input class="phone" type="number" id="phone" name="phone">
+
+                <label for="email">Email*</label>
+                <input class="email" type="email" id="email" name="email">
+
+                <label for="subject">Сообщение</label>
+                <textarea id="subject" name="subject"
+                          style="width: 339px;height:140px"></textarea>
+
+                <a href="#"><input id="submit" type="button" value="ОТПРАВИТЬ"></a>
+            </form>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="libs/owl.carousel.js"></script>
+    <script src="libs/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
