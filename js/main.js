@@ -12,8 +12,8 @@ $(document).ready(function(){
     autoplay:true,
     autoplayTimeout:4000,
     autoplayHoverPause:false,
-      animateOut: "fadeOut",
-      animateIn: "fadeIn",
+    animateIn: "fadeIn",
+    animateOut: "fadeOut",
   });
 
     var modal = document.getElementById("myModal");
