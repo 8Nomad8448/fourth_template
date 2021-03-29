@@ -29,16 +29,6 @@ $(document).ready(function(){
                 animateIn: "fadeIn",
                 animateOut: "fadeOut"
             });
-        } if (count == 2){
-            $('#owl-slider').removeClass('owl-carousel');
-            $('#owl-slider').removeClass('owl-theme');
-            $('#owl-slider').addClass('row');
-            $('#owl-slider > .item').addClass('col-md-6');
-        }if (count == 1){
-            $('#owl-slider').removeClass('owl-carousel');
-            $('#owl-slider').removeClass('owl-theme');
-            $('#owl-slider').addClass('row');
-            $('#owl-slider > .item').addClass('col-md-12');
         } else {
             $('#owl-slider').removeClass('owl-carousel');
             $('#owl-slider').removeClass('owl-theme');
@@ -87,6 +77,8 @@ $(document).ready(function(){
         let interrest = $(".interested_in").val();
         let email= $(".email").val();
         let nameReg = /^[a-zA-Z\u0401\u0451\u0410-\u044f]{2,40}$/;
+        let interrestReg = /^[a-zA-Z\u0401\u0451\u0410-\u044f]{2,40}$/;
+        let sunameReg = /^[a-zA-Z\u0401\u0451\u0410-\u044f]{2,40}$/;
         let regMail = /^\S+@\S+\.\S+$/;
         let regPhone = /^[0-9\-\+]{9,15}$/;
         let errorname = [];
@@ -95,49 +87,50 @@ $(document).ready(function(){
         let errorinterest = [];
         let errormail = [];
         if (name==null || name=="" || name.search(nameReg)){
-            $(".name").addClass("novalid_input");
-            $(".close").removeClass("sended");
+            $("#name").addClass("novalid_input");
             errorname[0] = 1;
         } else {
-            $(".name").removeClass("novalid_input");
+            $("#name").removeClass("novalid_input");
             errorname[0] = 0;
         }
         if(telephone.search(regPhone)){
-            $(".phone").addClass("novalid_input");
-            $(".close").removeClass("sended");
+            $("#phone").addClass("novalid_input");
             errorphone[0] = 1;
         } else {
-            $(".phone").removeClass("novalid_input");
+            $("#phone").removeClass("novalid_input");
             errorphone[0] = 0;
         }
-        if(suname==null || suname=="" || suname.search(nameReg)){
-            $(".suname").addClass("novalid_input");
-            $(".suname").removeClass("sended");
+        if(suname==null || suname=="" || suname.search(sunameReg)){
+            $("#suname").addClass("novalid_input");
             errorsuname[0] = 1;
         } else {
-            $(".suname").removeClass("novalid_input");
+            $("#suname").removeClass("novalid_input");
             errorsuname[0] = 0;
         }
         if (email.search(regMail)) {
-            $(".email").addClass("novalid_input");
-            $(".close").removeClass("sended");
+            $("#email").addClass("novalid_input");
             errormail[0] = 1;
         } else {
-            $(".inpMail").removeClass("novalid_input");
+            $("#email").removeClass("novalid_input");
             errormail[0] = 0;
-        }if(interrest==null || interrest=="" || interrest.search(nameReg)){
+        }if(interrest==null || interrest=="" || interrest.search(interrestReg)){
             $(".interested_in").addClass("novalid_input");
-            $(".interrest").removeClass("sended");
             errorinterest[0] = 1;
         } else {
             $(".interested_in").removeClass("novalid_input");
             errorinterest[0] = 0;
+        } if (!$('input.agree').is(':checked')) {
+            $(".check_label").addClass("red");
+        } else {
+            $(".check_label").removeClass("red");
         }
         if (errorname[0] != 1 && errorphone[0] != 1 && errormail[0] != 1) {
             $(".email").removeClass("novalid_input");
             $(".name").removeClass("novalid_input");
+            $(".suname").removeClass("novalid_input");
             $(".phone").removeClass("novalid_input");
-            $(".close").addClass("sended");
+            $(".interested_in").removeClass("novalid_input");
+            $(".check_label").removeClass("red");
             return true;
         }
     });

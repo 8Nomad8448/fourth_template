@@ -109,13 +109,23 @@ footer {
   }
 }
 @media (max-width: 991px) {
+  #navbarNav {
+    justify-content: flex-end;
+    .navbar-nav {
+      .nav-item {
+        .nav-text {
+          padding: 8px 22px;
+        }
+      }
+    }
+  }
   .navbar-light .navbar-nav .nav-link {
     color: rgba(0,0,0,.5);
     text-align: center;
   }
   .navbar-nav .nav-link {
     width: fit-content!important;
-    margin: 0 auto!important;
+    margin: 5px auto!important;
   }
   #content_with_video {
     .video {
@@ -134,6 +144,9 @@ footer {
   }
   #feedback_slider #owl-feedback .item p {
     padding: 0px 20px 25px;
+  }
+  header {
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 767px) {

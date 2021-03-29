@@ -186,6 +186,9 @@ padding: 10em 0px 0px 0px;
       display: block!important;
     }
   }
+  .justified {
+    justify-content: center;
+  }
 }
 #feedback_slider {
   h3 {
@@ -344,4 +347,7 @@ padding: 10em 0px 0px 0px;
 }
 .less_than_three {
   display: inline-block;
+}
+.red {
+  color: red!important;
 }
