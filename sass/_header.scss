@@ -1,108 +1,69 @@
 header {
+  background: #fff!important;
+  position: fixed;
   width: 100%;
-  background: #dcdcdc;
   height: auto;
-  padding: 0px 0px 57px 0px;
-  overflow: hidden;
-  .left_block {
-    margin-top: 66px;
-    display: block;
-    width: auto;
-    height: auto;
-    float: left;
+  z-index: 2;
+  box-shadow: 0 10px 10px -2px #efefef;
+  .bg-light {
+    background: #fff!important;
   }
-  .left_block img{
-    padding-left: 2px;
-    width: 273px;
-    height: 100px;
-  }
-  .right_block {
-    margin-top: 34px;
-    display: block;
-    float: right;
-    width: auto;
-    height: auto;
-    padding: 2px 0px 12px 0px;
-  }
-  .right_block p{
-    font-family: 'Open Sans Condensed', sans-serif;
-    display: block;
-    margin: 0px 0px;
-    color: #767676;
-    font-size: 40px;
-    line-height: 46px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    text-align: right;
-  }
-  .right_block {
-    .feedback {
-      width: fit-content;
-      margin-top: 5px;
-      font-family: 'PT Sans', sans-serif;
-      color: #767676;
-      font-size: 24px;
-      line-height: 24px;
-      text-align: right;
-      font-weight: 700;
-      font-style: normal;
-      letter-spacing: 0.6px;
-      border-bottom: 2px dashed #767676;
-      float: right;
-      text-decoration: none;
+  nav{
+   .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
     }
-    .feedback:hover {
-      color: #767676;
-      text-decoration: none;
+     .navbar-toggler {
+      border-color: #337ab7!important;
+      background: #337ab7;
+       border-color: rgb(255,102,203);
     }
-    .feedback:active {
-      color: #767676;
-      text-decoration: none;
+    .navbar-brand {
+      justify-content: flex-start;
     }
-  }
-}
-menu  {
-  width: 100%;
-  background: #767676;
-  height: auto;
-  padding: 25px 0px 29px;
-  overflow: hidden;
-  margin: 0px 0px;
-  nav {
-    margin: 0 auto;
-    width: 100%;
-    ul {
-      flex-wrap: wrap;
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      padding: 0px 0px;
-      width: 100%;
-      li{
-        font-size: 30px;
-
-        padding: 2px 0px 4px 0px;
-        border-right: 3px solid #fff;
-        a {
-          color: #fff;
-          margin: 0 auto;
-          padding: 0px 20px;
-          text-decoration: none;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-        a:active {
-          text-decoration: underline;
+    #navbarNav {
+      justify-content: flex-end;
+      .navbar-nav {
+        .nav-item {
+          .nav-text:hover {
+            background: #eeeeee;
+            color: #337ab7;
+          }
+          .nav-text:active {
+            background: #eeeeee;
+            color: #337ab7;
+          }
+          .nav-text:focus {
+            background: #eeeeee;
+            color: #337ab7;
+          }
         }
       }
-      li:last-child{
-        border: none;
-      }
     }
-
-
+      ul {
+        li {
+          .nav-link {
+            margin: 0 .3em;
+          }
+          .btn-leave-message {
+            padding: 8px 1.5rem!important;
+            border-radius: 25px;
+            background: #337ab7;
+            color: #e5f2f3!important;
+            text-decoration: none;
+          }
+          .btn-leave-message:hover {
+            background: #337ab7;
+            color: #e5f2f3!important;
+          }
+          .btn-leave-message:active {
+            background: #337ab7;
+            color: #e5f2f3!important;
+          }
+          .btn-leave-message:focus{
+            background: #337ab7;
+            color: #e5f2f3!important;
+          }
+        }
+      }
   }
 }
