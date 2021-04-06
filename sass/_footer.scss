@@ -1,81 +1,63 @@
 footer {
-  padding: 3.18rem 0 3.7rem;
-  text-transform: uppercase;
-  color: #45444a;
-  background: #000000;
-  .socials{
-    letter-spacing: 1.05rem;
-    .icons {
-      margin-top: -.1rem;
-      font-size: 20px;
-      margin-bottom: .1rem;
+  width: 100%;
+  .contact_info {
+    background: #3498db;
+    width: 100%;
+    text-align: center;
+    .contacts {
+      a:hover {
+        text-decoration: none;
+      }
+      a:active {
+        text-decoration: none;
+      }
+      a:focus {
+        text-decoration: none;
+      }
+      h5{
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+      }
+      p {
+        text-align: center;
+        color: #fff;
+      }
       i {
         font-style: normal;
-        color: #45444a;
-        transition: .8s;
-        transition-timing-function: ease-in-out;
-      }
-      .fa-linkedin-in:before {
-        content: "\f0e1";
-      }
-      i:hover {
-        color: #008ed6;
-        transition: .8s;
-        transition-timing-function: ease-in-out;
-      }
-      i:active {
-        color: #008ed6;
-        transition: .8s;
-        transition-timing-function: ease-in-out;
-      }
-      i:focus {
-        color: #008ed6;
-        transition: .8s;
-        transition-timing-function: ease-in-out;
-      }
-      a {
-
-        &:first-child {
-          letter-spacing: .535rem;
-        }
-        &:nth-child(2n) {
-          letter-spacing: .73rem;
-        }
-        &:nth-child(3n) {
-          letter-spacing: .91rem;
-        }
-        &:nth-child(4n) {
-          letter-spacing: .93rem;
-        }
-        &:nth-child(5n) {
-          letter-spacing: .15rem;
-        }
+        color: #fff;
+        font-size: 55px;
       }
     }
   }
-  a {
-    text-decoration: none;
-    color: #45444a;
-    font-weight: 600;
-  }
-  a:hover {
-    text-decoration: none;
-    color: #45444a;
-  }
-  a:active {
-    text-decoration: none;
-    color: #45444a;
-  }
-  a:focus {
-    text-decoration: none;
-    color: #45444a;
-  }
   .copyright {
-    margin-top: 1.16rem;
-    letter-spacing: .05px;
-    font-size: 14px;
+    text-align: center;
+    color: #8e9393;
+    .blue {
+      color: #82a4df;
+      margin-bottom: 10px;
+      a {
+        text-decoration: none;
+        color: #82a4df;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #82a4df;
+      }
+      a:active {
+        text-decoration: none;
+        color: #82a4df;
+      }
+      a:focus {
+        text-decoration: none;
+        color: #82a4df;
+      }
+    }
   }
 }
+
+
+
 
 @media (min-width: 576px){
   .container, .container-sm {
@@ -92,581 +74,223 @@ footer {
     max-width: 960px;
   }
 }
-@media (min-width: 1170px){
+@media (min-width: 1020px){
   .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1170px;
-  }
-  .owl-carousel {
-    max-width: 1170px;
+    max-width: 1020px;
   }
 }
-@media (max-width: 1420px) {
-  #contact_form .message form .right_area {
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1220px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1220px;
     padding: 0px 15px;
   }
 }
-@media (max-width: 1380px) {
-  #contact_form .message form .left_area input {
-    width: 100%;
-  }
-  #contact_form .message form .right_area {
-    textarea {
+@media (max-width: 1020px) {
+  #content_with_video {
+    .video {
+      margin: 0 auto;
       width: 100%;
-    }
-    #submit {
-      margin-right: 0rem;
+      margin-top: 25px;
+      padding: 0 15px;
+      iframe {
+        width: 100%;
+      }
     }
   }
 }
-@media (max-width: 1210px) {
-  #easy_customize_block .right_image img {
-    margin-left: -18px;
-    width: 100%;
-  }
-  header #introduce .right_intro img {
-    position: absolute;
-    margin-top: -2px;
-    margin-left: -22px;
-    width: 100%;
-    height: auto;
-  }
-  #feedback_slider .slider_overlay .owl-carousel {
-    padding: 6.85rem 1.5rem 3.25rem;
-  }
-  #into_details .left_image img{
-    width: 100%;
-    height: auto;
-  }
-  #into_details .content_right {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  #pricing_plans .price_blocks{
-    &:first-child {
-      padding-left: 15px;
-      padding-right: 15px;
-      .btn_order a {
-        padding-left: 1.8em;
-        padding-right: 1.8em;
-      }
-    }
-    &:nth-child(2n) {
-      padding-left: 15px;
-      padding-right: 15px;
-      .btn_order a {
-        padding-left: 1.8em;
-        padding-right: 1.8em;
-      }
-    }
-    &:nth-child(3n) {
-      padding-left: 15px;
-      padding-right: 15px;
-      .btn_order a {
-        padding-left: 1.8em;
-        padding-right: 1.8em;
-      }
-    }
-    &:nth-child(4n) {
-      padding-left: 15px;
-      padding-right: 15px;
-      .btn_order a {
-        padding-left: 1.8em;
-        padding-right: 1.8em;
-      }
-    }
-  }
-  #feedback_slider .slider_overlay .theme_propose .button_block {
-    padding-right: 15px;
-  }
-  #feedback_slider .slider_overlay .theme_propose .button_block span a:nth-child(2n) {
-    margin-left: 1.14rem;
-    padding: 1.1em 1em;
-  }
-  #feedback_slider .slider_overlay .theme_propose .button_block span a {
-    padding: 1.1em 1em;
-  }
-  #pricing_plans .price_blocks:nth-child(3n) .prices .btn_order {
-    padding: 1.33em 2em 1.7em;
-  }
-  #pricing_plans .price_blocks:nth-child(4n) .prices .btn_order {
-    padding: 1.33em 2em 1.7em;
-  }
-}
-@media (max-width: 1170px) {
-  #feedback_slider .slider_overlay .theme_propose .button_block {
-    padding-top: 2.8rem;
+@media (max-width: 1219px) {
+  #some_info .little_statistics:nth-child(4) p {
+    text-align: center;
   }
 }
 @media (max-width: 991px) {
-  header .navbar {
-    padding: 1.45rem 0 .55rem;
-  }
-  header .navbar #navbarNav {
+  #navbarNav {
     justify-content: flex-end;
     .navbar-nav {
       .nav-item {
         .nav-text {
           padding: 8px 22px;
         }
-        &:first-child {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 49%;
-
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 49%;
-            margin: 3.1rem .3rem auto 0rem;
-          }
-        }
-        &:nth-child(6n-4) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 48.25%;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 49%;
-            margin: 3.1rem .3rem auto 0rem;
-          }
-        }
-        &:nth-child(6n-3) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 49%;
-            margin: 0 0 0 1.35rem;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            margin: 3.1rem .3rem auto auto;
-            left: 49%;
-          }
-        }
-        &:nth-child(6n-2) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 49%;
-            margin: 0 0 0 1.35rem;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            margin: 3.1rem .3rem auto auto;
-            left: 49%;
-          }
-        }
-        &:nth-child(6n-1) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 49%;
-            margin: 0 0 0 1.35rem;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            margin: 3.1rem .3rem auto auto;
-            left: 49%;
-          }
-        }
-        &:nth-child(6n) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 49%;
-            margin: 0 0 0 1.35rem;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            margin: 3.1rem .3rem auto auto;
-            left: 49%;
-          }
-        }
-
-       }
+      }
     }
   }
   .navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
     text-align: center;
   }
   .navbar-nav .nav-link {
     width: fit-content!important;
     margin: 5px auto!important;
   }
-  header #introduce .left_intro {
-    padding: 1.96em 15px 3em 15px;
-    text-align: center;
-  }
-  header #introduce .right_intro {
-    img {
-      position: relative;
-      margin-top: 0px;
-      margin-left: 20%;
-      width: 60%;
-      height: auto;
-    }
-    form {
-      top: 0;
-      #the_name {
-        border-width: .5px;
-        border-style: solid;
-      }
-      #subjeckt {
-        border-width: .5px;
-        border-style: solid;
-      }
-      #mail {
-        border-width: .5px;
-        border-style: solid;
-      }
-      textarea {
-        border-width: .5px;
-        border-style: solid;
+  #content_with_video {
+    .video {
+      iframe {
+        height: 450px;
       }
     }
   }
-  #into_details .left_image {
-    img {
-      width: 60%;
-      height: auto;
-      margin-left: 20%;
-    }
+  #feedback_slider #owl-feedback .item p .top-left {
+    top: 0rem;
+    left: 0rem;
   }
-  #into_details .content_right {
-    text-align: center;
-    p {
-      padding-right: 0px;
-    }
-    .blue_lines{
-      .blue_lines_wrap {
-        margin: 0 auto;
-      }
-    }
+  #feedback_slider #owl-feedback .item p .bot-right {
+    right: 0rem;
+    bottom: 0rem;
   }
-  #easy_customize_block {
-    .content_left {
-      padding: 6.38rem 15px 0 15px;
-      text-align: center;
-    }
-    .content_left {
-      .blue_lines{
-        .blue_lines_wrap {
-          margin: 0 auto;
-        }
-      }
-    }
+  #feedback_slider #owl-feedback .item p {
+    padding: 0px 20px 25px;
   }
-  #into_details .content_right .benefits {
-    text-align: left;
-    margin: 0 auto;
-    width: fit-content;
-  }
-  #amazing .feature_block {
-    &:first-child {
-      padding: 0 15px 0em 15px;
-    }
-    &:nth-child(2n) {
-      padding: 0 15px 0em 15px;
-    }
-    &:nth-child(3n) {
-      padding: 0 15px 0em 15px;
-    }
-    &:nth-child(4n) {
-      padding: 0 15px 0em 15px;
-    }
-  }
-  #feedback_slider .slider_overlay .theme_propose .button_block {
-    padding-top: 1.8rem;
-  }
-  #pricing_plans h3 {
-    margin-bottom: 2.3rem;
-  }
-  #pricing_plans .price_blocks {
-    padding-top: 30px;
-  }
-  #contact_form .message {
-    margin: 0 auto;
-    background: transparent;
-    position: absolute;
-    left: 21.88%;
-    padding: 0.2rem;
-    margin-top: -17.8rem;
-  }
-  #contact_form .message form .left_area {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  #contact_form .message form {
-    background: #15141a;
-    width: 100%;
-    padding: 2.75rem 2rem 1.5rem;
-  }
-  #feedback_slider .slider_overlay .item .author span {
-    text-align: left;
-  }
-  .owl-carousel .owl-item {
-    text-align: center;
+  header {
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 767px) {
-  header .navbar #navbarNav {
-    .navbar-nav {
-      .nav-item {
-        .nav-text {
+  .navbar-brand {
+    width: 25%;
+  }
+  #content_with_video {
+    .video {
+      iframe {
+        height: 300px;
+      }
+    }
+  }
+  #our_mentors_with_slider  {
+    #owl-mentors {
+      .item {
+        .right-part h4{
+          text-align: center;
+          margin: 30px auto;
         }
-        &:first-child {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 48.5%;
+      }
+    }
+     .owl-carousel .owl-item img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+      height: auto;
+    }
+  }
+  #feedback_slider #owl-feedback .item p {
+    padding: 0px 24px 25px;
 
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 48.5%;
-          }
-        }
-        &:nth-child(6n-4) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 47%;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 48.25%;
-          }
-        }
-        &:nth-child(6n-3) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 48.35%;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 48.25%;
-          }
-        }
-        &:nth-child(6n-2) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 48%;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 48%;
-          }
-        }
-        &:nth-child(6n-1) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 48.5%;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 48.25%;
-          }
-        }
-        &:nth-child(6n) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 48.5%;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 48.5%;
-          }
-        }
-
-      }
-    }
-  }
-  header #introduce .right_intro img {
-    position: relative;
-    margin-top: 0px;
-    margin-left: 15%;
-    width: 75%;
-    height: auto;
-  }
-  #into_details .left_image img {
-    width: 75%;
-    height: auto;
-    margin-left: 15%;
-  }
-  #feedback_slider .slider_overlay .theme_propose .button_block {
-    text-align: center;
-     span a {
-      padding: 1.1em 2em;
-      &:nth-child(2n) {
-        padding: 1.1em 2em;
-      }
-    }
-  }
-  #pricing_plans .price_blocks {
-    &:first-child {
-      padding: 15px 4rem;
-      .prices .btn_order a {
-        padding: 1rem 3rem;
-      }
-    }
-    &:nth-child(2n) {
-      padding: 15px 4rem;
-      .prices .btn_order a {
-        padding: 1rem 3rem;
-      }
-    }
-    &:nth-child(3n) {
-      padding: 15px 4rem;
-      .prices .btn_order a {
-        padding: 1rem 3rem;
-      }
-    }
-    &:nth-child(4n) {
-      padding: 15px 4rem;
-      .prices .btn_order a {
-        padding: 1rem 3rem;
-      }
-    }
-  }
-  #contact_form .message {
-    margin: 0 auto;
-    background: transparent;
-    position: relative;
-    left: 0;
-    padding: 0.2rem;
-    margin-top: 0;
-  }
-  #contact_form .message form {
-    background: #15141a;
-    width: 100%;
-    padding: 2rem 0rem 2rem .6rem;
-    margin-right: 0px;
-  }
-  #contact_form .message form .right_area {
-    padding: 1.25rem 15px 0px;
-  }
-  #contact_us .contacts_blocks:first-child img {
-    margin-right: 0rem;
-    margin-bottom: 1.6rem;
-  }
-
-  #contact_us .contacts_blocks:nth-child(3n) img {
-    margin-top: .3rem;
-     margin-left: 0rem;
-  }
-  #contact_us {
-    padding: 3.3em 0em 4.9em 0;
   }
 }
 @media (max-width: 574px) {
-  header #introduce .overlay .left_intro {
-    padding: 1.96em 25px 3em 25px;
+  footer {
+    .contacts {
+      width: 50%;
+    }
   }
-  header .navbar {
-    padding: 1.4rem 15px .5rem;
+  #some_info .little_statistics {
+    width: 50%;
+
+    p {
+      font-size: 12px;
+    }
   }
-  header #introduce .right_intro img {
+  #conacts .about_us .about_us_wrapper p {
+    padding: 0 30px;
+    text-align: center;
+  }
+  #our_mentors_with_slider {
+    #owl-mentors {
+      .item {
+        .right-part p {
+          text-align: center;
+        }
+      }
+    }
+    #content_with_video {
+      .video {
+        padding: 0 10px;
+      }
+    }
+    .owl-carousel .owl-item img {
+      width: 60%;
+    }
+  }
+}
+@media (max-width: 540px) {
+  #content_with_video {
+    .video {
+      iframe {
+        height: 250px;
+      }
+    }
+  }
+  #our_mentors_with_slider  {
+    #owl-mentors {
+      .item {
+        .right-part p{
+          text-align: center;
+        }
+      }
+    }
+    .owl-carousel .owl-item img {
+      width: 70%;
+    }
+  }
+  #conacts .form_contant h3 {
+    font-size: 22px;
+  }
+  #conacts .about_us .about_us_wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 410px) {
+  #conacts .form_contant form .check_label{
+    font-size: 14px;
+  }
+  #conacts .about_us .about_us_wrapper {
+    h1 {
+      font-size: 26px;
+    }
+    p {
+      padding: 0 0px;
+    }
+  }
+  #content_with_video {
+    .video {
+      iframe {
+        height: 200px;
+      }
+    }
+  }
+  #feedback_slider #owl-feedback .item p .top-left {
+    top: .2rem;
+  }
+  #feedback_slider #owl-feedback .item p .bot-right {
+    right: .5rem;
+    bottom: .2rem;
+  }
+  #feedback_slider #owl-feedback .item p {
+    padding: 0px 30px 25px;
+  }
+  footer {
+    .contacts {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  #conacts .form_contant form #submit {
     width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-  #into_details .left_image {
-    padding-left: 15px;
-    padding-right: 15px;
-    img {
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
-    }
-  }
-  #easy_customize_block .content_left {
-    padding: 6.38rem 15px 0 15px;
-  }
-  #easy_customize_block .right_image img {
-    margin-left: auto;
-    height: auto;
-  }
-  #feedback_slider .slider_overlay .theme_propose {
-    padding: 3.9rem 15px 4.2rem;
   }
 }
-@media (max-width: 400px) {
-  header .navbar #navbarNav {
-    .navbar-nav {
-      .nav-item {
-        .nav-text {
-        }
-        &:first-child {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 47.5%;
-
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 47.5%;
-          }
-        }
-        &:nth-child(6n-4) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 44.5%;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 47%;
-          }
-        }
-        &:nth-child(6n-3) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 47.35%;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 47.25%;
-          }
-        }
-        &:nth-child(6n-2) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 47%;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 47%;
-          }
-        }
-        &:nth-child(6n-1) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 47.5%;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 47.25%;
-          }
-        }
-        &:nth-child(6n) {
-          &:hover::after, &:active::after, &:focus::after {
-            left: 47.5%;
-          }
-          &:hover::before, &:active::before, &:focus::before {
-            left: 47.5%;
-          }
-        }
-
-      }
-    }
+@media (max-width: 396px) {
+  #conacts .form_contant form .check_label{
+    position: absolute;
+    bottom: 3.5rem;
+    left: 2.3rem;
+    font-size: 16px;
   }
-  header #introduce .right_intro {
-    form {
-      width: 100%;
-      right: 0;
-      textarea {
-        border-width: .5px;
-        border-style: solid;
-      }
-    }
-  }
-  #pricing_plans .price_blocks {
-    &:first-child {
-      padding: 15px 15px;
-    }
-    &:nth-child(2n) {
-      padding: 15px 15px;
-    }
-    &:nth-child(3n) {
-      padding: 15px 15px;
-    }
-    &:nth-child(4n) {
-      padding: 15px 15px;
-    }
-  }
-  #feedback_slider .slider_overlay .theme_propose .button_block span a {
-    padding: 1.1em 2em;
-    width: fit-content;
-    margin: 0 auto 1rem;
-    display: block;
-  }
-  #feedback_slider .slider_overlay .theme_propose .button_block span a:nth-child(2n) {
-    padding: 1.1em 2em;
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 360px) {
-  header #introduce .overlay span a:first-child {
-    margin: 0 auto 1rem;
-    display: block;
-    width: fit-content;
-  }
-  header #introduce .overlay span a:last-child {
-    padding: 1.1em 2.09em;
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
+  #conacts .form_contant form .agree {
+    margin-top: 30px;
   }
 }
