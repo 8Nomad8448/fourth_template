@@ -1,48 +1,18 @@
 $(document).ready(function(){
-    function screenClass() {
-        var count = $("#owl-slider > div").length;
-        if($(window).innerWidth() < 850 || count > 3) {
-            var owl = $("#owl-slider");
-            owl.owlCarousel({
-                loop: true,
-                margin: 0,
-                items: 3,
-                responsive : {
-                    0 : {
-                        items: 1
-                    },
-                    600 : {
-                        items: 2,
-                    },
-                    850 : {
-                        items: 3,
-                    }
-                },
-                center: false,
-                dots: true,
-                nav: false,
-                touchDrag  : true,
-                mouseDrag  : true,
-                autoplay:true,
-                autoplayTimeout:4000,
-                autoplayHoverPause:true,
-                animateIn: "fadeIn",
-                animateOut: "fadeOut"
-            });
-        } else {
-            $('#owl-slider').removeClass('owl-carousel');
-            $('#owl-slider').removeClass('owl-theme');
-            $('#owl-slider').addClass('row');
-            $('#owl-slider > .item').addClass('col-md-4');
-        }
-    }
-    screenClass();
-    var owl = $("#owl-feedback");
+    var owl = $("#owl-slider");
     owl.owlCarousel({
         loop: true,
-        margin: 0,
-        items: 1,
-        center: true,
+        margin: 27,
+        items: 2,
+        responsive : {
+            0 : {
+                items: 1
+            },
+            991 : {
+                items: 2,
+            }
+        },
+        center: false,
         dots: true,
         nav: false,
         touchDrag  : true,
@@ -53,85 +23,28 @@ $(document).ready(function(){
         animateIn: "fadeIn",
         animateOut: "fadeOut"
     });
-    var owl = $("#owl-mentors");
-    owl.owlCarousel({
-        loop: true,
-        margin: 0,
-        items: 1,
-        center: true,
-        dots: true,
-        nav: false,
-        touchDrag  : true,
-        mouseDrag  : true,
-        autoplay:true,
-        autoplayTimeout: 10000,
-        autoplayHoverPause: true,
-        animateIn: "fadeIn",
-        animateOut: "fadeOut"
+    //* Appear form
+    $(".view").click(function() {
+        $("#not_visible").removeClass("hidden");
     });
-// Validation form functions
-    $("#submit").click(function() {
-        let name= $(".name").val();
-        let suname= $(".suname").val();
-        let telephone= $(".phone").val();
-        let interrest = $(".interested_in").val();
-        let email= $(".email").val();
-        let nameReg = /^[a-zA-Z\u0401\u0451\u0410-\u044f]{2,40}$/;
-        let interrestReg = /^[a-zA-Z\u0401\u0451\u0410-\u044f]{2,40}$/;
-        let sunameReg = /^[a-zA-Z\u0401\u0451\u0410-\u044f]{2,40}$/;
-        let regMail = /^\S+@\S+\.\S+$/;
-        let regPhone = /^[0-9\-\+]{9,15}$/;
-        let errorname = [];
-        let errorsuname = [];
-        let errorphone = [];
-        let errorinterest = [];
-        let errormail = [];
-        if (name==null || name=="" || name.search(nameReg)){
-            $("#name").addClass("novalid_input");
-            errorname[0] = 1;
-        } else {
-            $("#name").removeClass("novalid_input");
-            errorname[0] = 0;
-        }
-        if(telephone.search(regPhone)){
-            $("#phone").addClass("novalid_input");
-            errorphone[0] = 1;
-        } else {
-            $("#phone").removeClass("novalid_input");
-            errorphone[0] = 0;
-        }
-        if(suname==null || suname=="" || suname.search(sunameReg)){
-            $("#suname").addClass("novalid_input");
-            errorsuname[0] = 1;
-        } else {
-            $("#suname").removeClass("novalid_input");
-            errorsuname[0] = 0;
-        }
-        if (email.search(regMail)) {
-            $("#email").addClass("novalid_input");
-            errormail[0] = 1;
-        } else {
-            $("#email").removeClass("novalid_input");
-            errormail[0] = 0;
-        }if(interrest==null || interrest=="" || interrest.search(interrestReg)){
-            $(".interested_in").addClass("novalid_input");
-            errorinterest[0] = 1;
-        } else {
-            $(".interested_in").removeClass("novalid_input");
-            errorinterest[0] = 0;
-        } if (!$('input.agree').is(':checked')) {
-            $(".check_label").addClass("red");
-        } else {
-            $(".check_label").removeClass("red");
-        }
-        if (errorname[0] != 1 && errorphone[0] != 1 && errormail[0] != 1) {
-            $(".email").removeClass("novalid_input");
-            $(".name").removeClass("novalid_input");
-            $(".suname").removeClass("novalid_input");
-            $(".phone").removeClass("novalid_input");
-            $(".interested_in").removeClass("novalid_input");
-            $(".check_label").removeClass("red");
-            return true;
-        }
+    $("#send").click(function() {
+        $("#not_visible").addClass("hidden");
     });
+    //* scroll function
+    function myFunction() {
+        let box = document.querySelector('header');
+        let tall = box.clientHeight;
+        const height = $(window).height();
+        const scrollTop = $(window).scrollTop();
+        if (scrollTop >= tall) {
+            $("#nav").addClass("fix");
+            $("#nav").addClass("nav_back");
+            $(".intro").addClass ("intro_scroll")
+        } else {
+            $("#nav").removeClass("nav_back");
+            $("#nav").removeClass("fix");
+            $(".intro").removeClass ("intro_scroll")
+        }
+    };
+    window.onscroll = function() {myFunction()};
 });
